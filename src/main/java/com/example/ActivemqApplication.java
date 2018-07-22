@@ -9,6 +9,7 @@ public class ActivemqApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ActivemqApplication.class, args);
-		System.out.print("启动成功");
+		System.out.print("******************启动成功*****************");
+
 	}
 }
