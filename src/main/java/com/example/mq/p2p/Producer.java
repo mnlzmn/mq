@@ -34,17 +34,28 @@ public class Producer {
 
     public void send() {
         try {
-            Destination destination = session.createQueue("First");
-            MapMessage msg1 = session.createMapMessage();
-            msg1.setStringProperty("name", "1");
-            msg1.setIntProperty("age", 20);
+            Destination destination = session.createQueue("first");
+//            MapMessage msg1 = session.createMapMessage();
+//            msg1.setString("name", "1");
+//            msg1.setInt("age", 20);
+//
+//            MapMessage msg2 = session.createMapMessage();
+//            msg2.setStringProperty("name", "2");
+//            msg2.setIntProperty("age", 30);
+//
+//            messageProducer.send(destination, msg1);
+//            messageProducer.send(destination, msg2);
 
-            MapMessage msg2 = session.createMapMessage();
-            msg2.setStringProperty("name", "2");
-            msg2.setIntProperty("age", 30);
+//            TextMessage textMessage = session.createTextMessage("消息");
+//            messageProducer.send(destination, textMessage);
 
-            messageProducer.send(destination, msg1);
-            messageProducer.send(destination, msg2);
+            MapMessage msg = session.createMapMessage();
+            msg.setBoolean("boolean", true);
+            msg.setShort("short", (short) 0);
+            msg.setLong("long", 123456);
+            msg.setString("MapMessage", "ActiveMQ Map Message!");
+            messageProducer.send(destination, msg);
+
 
         } catch (JMSException e) {
             e.printStackTrace();

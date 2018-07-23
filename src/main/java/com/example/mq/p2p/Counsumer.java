@@ -12,8 +12,8 @@ import javax.jms.*;
  */
 public class Counsumer {
 
-    public final String SELECT_1 = "name='1' and age=20";
-    public final String SELECT_2 = "name='2' and age=30";
+    public final String SELECT_1 = "name='1'";
+    public final String SELECT_2 = "name='2'";
 
     private ConnectionFactory connectionFactory;
     private Connection connection;
@@ -29,7 +29,7 @@ public class Counsumer {
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             destination = session.createQueue("first");
             //加入条件
-            messageConsumer = session.createConsumer(destination, SELECT_1);
+            messageConsumer = session.createConsumer(destination);
         } catch (JMSException e) {
             e.printStackTrace();
         }
