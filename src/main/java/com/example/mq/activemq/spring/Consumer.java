@@ -1,4 +1,4 @@
-package com.example.mq.spring;
+package com.example.mq.activemq.spring;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.messaging.handler.annotation.SendTo;

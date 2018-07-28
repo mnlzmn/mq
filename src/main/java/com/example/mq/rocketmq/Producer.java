@@ -1,4 +1,4 @@
-package com.example.rocketmq;
+package com.example.mq.rocketmq;
 
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
@@ -19,7 +19,7 @@ public class Producer {
 
         //设置NameServer地址,此处应改为实际NameServer地址，多个地址之间用；分隔
         //NameServer的地址必须有，但是也可以通过环境变量的方式设置，不一定非得写死在代码里
-        producer.setNamesrvAddr("192.168.1.121:9876");
+        producer.setNamesrvAddr("47.105.47.171:9876");
        // producer.setVipChannelEnabled(false);
         //调用start()方法启动一个producer实例
         producer.start();

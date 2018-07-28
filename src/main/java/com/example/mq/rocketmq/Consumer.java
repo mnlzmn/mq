@@ -1,4 +1,4 @@
-package com.example.rocketmq;
+package com.example.mq.rocketmq;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
@@ -21,7 +21,7 @@ public class Consumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("consumer1");
        // consumer.setVipChannelEnabled(false);
         //同样也要设置NameServer地址
-        consumer.setNamesrvAddr("192.168.1.121:9876");
+        consumer.setNamesrvAddr("47.105.47.171:9876");
 
         //这里设置的是一个consumer的消费策略
         //CONSUME_FROM_LAST_OFFSET 默认策略，从该队列最尾开始消费，即跳过历史消息

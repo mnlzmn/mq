@@ -1,4 +1,4 @@
-package com.example.mq.p2p;
+package com.example.mq.activemq.p2p;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 

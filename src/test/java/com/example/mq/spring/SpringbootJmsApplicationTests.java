@@ -1,5 +1,6 @@
 package com.example.mq.spring;
 
+import com.example.mq.activemq.spring.Producer;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +13,7 @@ import javax.jms.Destination;
 import static org.junit.Assert.*;
 
 /**
+ * spring+activemq
  * Created by Administrator on 2018/7/23.
  */
 @RunWith(SpringRunner.class)

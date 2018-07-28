@@ -1,4 +1,4 @@
-package com.example.mq.pb;
+package com.example.mq.activemq.pb;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
