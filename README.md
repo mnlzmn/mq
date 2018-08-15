@@ -1,7 +1,7 @@
 # mq
 rocketmq代码示例
 
-## pom文件：
+## pom文件
 ```xml
 <dependency>
     <groupId>org.apache.rocketmq</groupId>
@@ -9,7 +9,7 @@ rocketmq代码示例
     <version>4.0.0-incubating</version>
 </dependency>
 ```
-## producer:
+## producer
 ```java
 @Component
 public class PublishMessage {
